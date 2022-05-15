@@ -1,0 +1,173 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bedrooms Observed</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Astloch&family=Averia+Libre:wght@300&family=Averia+Sans+Libre:ital,wght@0,300;0,400;1,300&family=Big+Shoulders+Display&family=Carter+One&family=Ceviche+One&family=Chango&family=Chewy&family=Chicle&family=Elsie&family=Emblema+One&family=Fondamento&family=Karantina:wght@300&family=Kavoon&family=Knewave&family=Londrina+Sketch&family=Luckiest+Guy&family=Modak&family=Mogra&family=Nova+Script&family=Original+Surfer&family=Philosopher&family=Potta+One&family=Racing+Sans+One&family=Risque&family=Ruslan+Display&family=Shadows+Into+Light&family=Sofadi+One&family=Syne+Mono&family=Unica+One&family=Lora:ital,wght@0,400;1,700&family=Vampiro+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header> <div class="logo"> <a href="/index.html"> Aalixyah </a></div>
+        <div class="info"> <a href="/index.html"><h4> &#8592; Back</h4></ion-icon></a></div>
+        </header>
+        <div class="Project-Title">
+            <p>Bedrooms Observed</p>
+        </div>
+        <div class="slideshow-container">
+    
+            <div class="mySlides fade">
+             
+              <img class="col-img" src="assets/Juliuz 1.jpg" >
+             
+            </div>
+            
+            <div class="mySlides fade">
+            
+              <img class="col-img" src="assets/Bedrooms1a.jpg" >
+              
+            </div>
+            
+            <div class="mySlides fade">
+         
+              <img class="col-img" src="assets/Bedrooms1.jpg" >
+              
+            </div>
+    
+            <div class="mySlides fade">
+         
+                <img class="col-img" src="assets/Bedrooms8.jpg" >
+                
+              </div>
+              <div class="mySlides fade">
+             
+                <img class="col-img" src="assets/Bedrooms5.jpg" >
+               
+              </div>
+              
+              <div class="mySlides fade">
+              
+                <img class="col-img" src="assets/Bedrooms6.jpg" >
+                
+              </div>
+              
+              <div class="mySlides fade">
+           
+                <img class="col-img" src="assets/Bedrooms9.jpg" >
+                
+              </div>
+              <div class="mySlides fade">
+           
+                <img class="col-img" src="assets/Bedrooms2.jpg" >
+                
+              </div>
+              
+              <div class="mySlides fade">
+           
+                <img class="col-img" src="assets/Bedrooms3.jpg" >
+                
+              </div>
+              <div class="mySlides fade">
+           
+                <img class="col-img" src="assets/Bedrooms10.jpg" >
+                
+              </div>
+              <div class="mySlides fade">
+           
+                <img class="col-img" src="assets/Bedrooms4.jpg" >
+                
+              </div>
+              
+              <div class="mySlides fade">
+           
+                <img class="col-img" src="assets/Bedrooms11.jpg" >
+                
+              </div>
+            
+              
+              
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span> 
+              <span class="dot" onclick="currentSlide(5)"></span> 
+              <span class="dot" onclick="currentSlide(6)"></span> 
+              <span class="dot" onclick="currentSlide(7)"></span> 
+              <span class="dot" onclick="currentSlide(8)"></span> 
+              <span class="dot" onclick="currentSlide(9)"></span> 
+              <span class="dot" onclick="currentSlide(10)"></span> 
+              <span class="dot" onclick="currentSlide(11)"></span> 
+              <span class="dot" onclick="currentSlide(12)"></span> 
+            
+            
+    
+            </div>
+    
+            <div class="project-text"><p>
+                Bedroooms Observed is an identity based photography project that seeks to explore the importance of personal environments in the formation of identity. Taken across the UK Aaliyah Observed the living spaces of young adults taking portraits on a medium format camera and polaroid.
+                <br></p>
+                <p> We spend so much time in our beds and for many its a place where we go to feel happy or when we feel sad, to relax or to dream. our most intimate thoughts and moments are spent here and photographing young people coming out of the global covid-19 pandemic also opens a window into where for a time people were trapped.
+             </p>
+        
+            </div>
+     
+         
+       
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        
+        
+    
+    
+   
+ 
+
+  
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
+    <title>Colour Play</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {box-sizing: border-box}
+    
+        
+        </style>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Astloch&family=Averia+Libre:wght@300&family=Averia+Sans+Libre:ital,wght@0,300;0,400;1,300&family=Big+Shoulders+Display&family=Carter+One&family=Ceviche+One&family=Chango&family=Chewy&family=Chicle&family=Elsie&family=Emblema+One&family=Fondamento&family=Karantina:wght@300&family=Kavoon&family=Knewave&family=Londrina+Sketch&family=Luckiest+Guy&family=Modak&family=Mogra&family=Nova+Script&family=Original+Surfer&family=Philosopher&family=Potta+One&family=Racing+Sans+One&family=Risque&family=Ruslan+Display&family=Shadows+Into+Light&family=Sofadi+One&family=Syne+Mono&family=Unica+One&family=Lora:ital,wght@0,400;1,700&family=Vampiro+One&display=swap" rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body class="colour-play "tabindex="0">
+    <header> <div class="logo"> <a href="/index.html"> Aalixyah </a></div>
+        <div class="info"> <a href="/index.html"><h4> &#8592; Back</h4></ion-icon></a></div>
+    </header>
+    <div class="Project-Title">
+        <p>Colour Play</p>
+    </div>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+         
+          <img class="col-img" src="assets/Colour_Play_1.jpg" >
+         
+        </div>
+        
+        <div class="mySlides fade">
+        
+          <img class="col-img" src="assets/Colour_Play_2.jpg" >
+          
+        </div>
+        
+        <div class="mySlides fade">
+     
+          <img class="col-img" src="assets/Colour_Play_3.jpg" >
+          
+        </div>
+
+        <div class="mySlides fade">
+     
+            <img class="col-img" src="assets/Colour_Play_4.jpg" >
+            
+          </div>
+          <div class="mySlides fade">
+         
+            <img class="col-img" src="assets/Colour_Play_5.jpg" >
+           
+          </div>
+          
+          <div class="mySlides fade">
+          
+            <img class="col-img" src="assets/Colour_Play_6.jpg" >
+            
+          </div>
+          
+          <div class="mySlides fade">
+       
+            <img class="col-img" src="assets/Colour_Play_7.jpg" >
+            
+          </div>
+          
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+          <span class="dot" onclick="currentSlide(5)"></span> 
+          <span class="dot" onclick="currentSlide(6)"></span> 
+          <span class="dot" onclick="currentSlide(7)"></span> 
+        
+
+        </div>
+
+<div class="project-text"><p>
+    Entitled Colour Play as part of my university assignment I created a photographic book based on the art of data. The project focuses on what constitutes as an image, drawing inspiration from the DADA movement and various models of colour-theory. The images in the book are created through the manipulation of code analysing the relationship between the analog and digital. Within the spectrum of images the book explores the visualisation of music and text as a photograph through lyric matrixes, graphs and design.    
+     <br>
+            </p>
+        
+        </div>
+    
+
+   <!-- <div class="footer">
+        <div class="instagram">
+            <a href="http://instagram.com/aalixyah"><ion-icon name="logo-instagram" ></ion-icon></a>
+        </div>
+        <div class="github">
+            <a href="https://github.com/aalixyah"><ion-icon name="logo-github" ></ion-icon></a>
+        </div>
+    </div> -->
+
+   
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    
+    
+
+</body>
+</html>
