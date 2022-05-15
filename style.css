@@ -162,7 +162,7 @@ li{
 .footer-mobile{
     position: absolute;
     display: none;
-    bottom: 5;
+    bottom: 20;
     width: 100%;
     justify-content: center;
 }
